@@ -3,6 +3,10 @@
 /db
 /deps
 /*.ez
+/cover
+/doc
+/.fetch
+*.beam
 
 # Generated on crash by the VM
 erl_crash.dump
