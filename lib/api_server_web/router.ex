@@ -19,6 +19,12 @@ defmodule ApiServerWeb.Router do
     get "/", PageController, :index
   end
 
+  scope "/api", ApiServerWeb do
+    pipe_through :api
+
+    get "/hello", PageController, :hello
+  end
+
   # Other scopes may use custom stacks.
   # scope "/api", ApiServerWeb do
   #   pipe_through :api
